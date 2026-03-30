@@ -1,0 +1,48 @@
+:root {
+	/* --nav-bg: rgba(22, 22, 23, .8); */
+}
+
+.nav {
+	background-color: var(--nav-bg);
+	color: #fff;
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
+}
+
+.nav__list {
+    display: flex;
+	gap: 20px;
+    justify-content: space-between;
+	align-items: center;
+
+	cursor: default;
+    margin: 0 -8px;
+    width: auto;
+    height: 44px;
+    -webkit-user-select: none;
+    user-select: none;
+    list-style: none;
+	white-space: nowrap;
+}
+
+.nav__link {
+	font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+
+	color: rgb(255, 255, 255, .8) ;
+}
+
+.nav__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+
+	padding-top: 3px;
+	fill: currentColor;
+}
+
+.nav__item {padding: 0;}
+
+.nav__item--text {padding: 0;}
