@@ -1,7 +1,6 @@
-# Apple-slider
+# Apple-com
 
-кастомный слайдер (без Swiper)
-Копия слайдера [https://www.apple.com/iphone-17-pro/](https://www.apple.com/iphone-17-pro/).
+Учебный проект. Копия главной [https://www.apple.com](https://www.apple.com).
 
 ***Deployment on Vercel***: https://apple-slider-1jw4k1ofg-kovalchuk-alexandrs-projects.vercel.app/
 
@@ -10,8 +9,7 @@
 ## Технологии
 
 - **Next.js 14** - React фреймворк
-- **Framer Motion** - Анимации (FadeIn, AnimatePresence)
-- **Exit-анимация** - уезжание слайда влево
+- **Media response** - Разные картинки в зависимости от ширины экрана
 - Видео в слайдах
 
 ## Установка и запуск

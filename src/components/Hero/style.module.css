@@ -1,0 +1,21 @@
+.hero {
+	height: 692px;
+}
+
+.hero__imageContainer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 1068px) {
+	.hero {
+		height: 650px;
+	}
+}
+
+@media (max-width: 998px) {
+	.hero {
+		height: 500px;
+	}
+}
