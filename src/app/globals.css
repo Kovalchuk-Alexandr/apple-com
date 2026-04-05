@@ -4,8 +4,6 @@
 /* Локальный шрифт */
 @import url("./fonts/SFPro/stylesheet.css");
 
-/* @import "tailwindcss"; */
-
 :root {
 	--font-sf-pro: 'SF Pro Display', sans-serif;
   	--background: #ffffff;
@@ -15,7 +13,7 @@
 }
 
 * {
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
 }
 
 .none {
@@ -49,3 +47,22 @@ body {
 	margin: 0 auto;
 	padding: 0 1rem;
 }
+
+.section-heroes {
+	display: grid;
+	gap: 12px;
+	padding-bottom: 12px;
+}
+
+.section-promo-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 12px;
+}
+
+@media (max-width: 998px) {
+	.section-promo-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+

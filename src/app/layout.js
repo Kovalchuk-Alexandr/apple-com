@@ -15,7 +15,12 @@ const geistMono = Geist_Mono({
 export const metadata = {
 	title: 'Apple replica',
 	description: 'Copy of Apple.com',
+	icons: {
+		icon: '/apple-wb.png', // файл лежит в public/favicon.svg
+	},
 };
+
+
 
 export default function RootLayout({ children }) {
   return (
