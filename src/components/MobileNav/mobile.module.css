@@ -51,7 +51,7 @@
 .btnActive .lineMid  { opacity: 0; }
 .btnActive .lineBot {
 	stroke: #1d1d1f;
-  transform: translateY(3px) rotate(-45deg);
+  transform: translateY(4px) rotate(-45deg);
   transition:
     y         0.1s linear,
     transform 0.1s ease-in 0.1s;

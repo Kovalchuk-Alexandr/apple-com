@@ -1,8 +1,8 @@
 'use client';
 
 import { navItems } from '@/data/navItems';
-import styles from './mobile.module.css';
 import { MobileBtn } from './MobileBtn';
+import styles from './mobile.module.css';
 
 // const navItems = [
 // 	{ name: 'Store', href: '#!' },

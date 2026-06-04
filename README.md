@@ -2,15 +2,17 @@
 
 Учебный проект. Копия главной [https://www.apple.com](https://www.apple.com).
 
-***Deployment on Vercel***: https://apple-slider-1jw4k1ofg-kovalchuk-alexandrs-projects.vercel.app/
+***Deployment on Vercel***: [https://apple-com-zeta.vercel.app/](https://apple-com-zeta.vercel.app/)
 
-[See Demo](https://apple-slider-1jw4k1ofg-kovalchuk-alexandrs-projects.vercel.app/)
+[See Demo](https://apple-com-zeta.vercel.app/)
 
 ## Технологии
 
 - **Next.js 14** - React фреймворк
 - **Media response** - Разные картинки в зависимости от ширины экрана
+- Два Swiper slider`s
 - Видео в слайдах
+- Без глобального адаптива. В основном desktop
 
 ## Установка и запуск
 
@@ -33,6 +35,7 @@ npm run dev
 
 ```bash
 npm install
+npm i swiper  // Установка swiper slider
 ```
 
 ### 3. Запуск приложения

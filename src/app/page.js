@@ -2,6 +2,8 @@ import Nav from '@components/Nav';
 import Hero from '@/components/Hero';
 import { heroes } from '@data/heroes';
 import { promos } from '@data/promos';
+import HeroSlider from '@/components/HeroSlider/HeroSlider';
+import Carousel from '@/components/Carousel/Carousel';
 
 export default function Home() {
 	// const data = {
@@ -32,6 +34,12 @@ export default function Home() {
 				{promos.map((promo, index) => (
 					<Hero data={promo} key={index} size="small" />
 				))}
+			</section>
+			<section className="section-hero-slider">
+				<HeroSlider />
+			</section>
+			<section className="section-carousel">
+				<Carousel />
 			</section>
 		</>
 	);

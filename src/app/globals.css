@@ -66,3 +66,145 @@ body {
 	}
 }
 
+.section-carousel {margin-bottom: 20px;}
+
+/* Slider */
+#hero-slider.swiper {
+	--swiper-theme-color: #000000;
+	--swiper-pagination-bullet-inactive-color: #000000;
+	--swiper-pagination-bullet-inactive-opacity: 0.4;
+	--swiper-pagination-bullet-horizontal-gap: 8px;
+	--swiper-pagination-bullet-size: 10px;
+
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 40px !important;
+}
+
+#hero-slider .swiper-slide {
+  background-position: center;
+  background-size: cover;
+
+  display: flex !important;
+  justify-content: center;
+  align-items: center !important;
+
+  width: 1250px !important;
+
+  @media (max-width: 998px) {
+	  width: 70% !important;
+	};
+}
+
+#hero-slider .swiper-slide img {
+	opacity: 0.5;
+
+	transition: opacity 0.3s ease;
+}
+
+#hero-slider .swiper-slide-active img {
+  opacity: 1;
+}
+
+#hero-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#hero-slider .swiper-slide:nth-child(2n) {
+  width: 40%;
+}
+
+#hero-slider .swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: .3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+/* Для непрырывного плавного движения слайдов */
+#carousel-slider .swiper-wrapper { transition-timing-function: linear !important; }
+
+#carousel-slider .swiper-slide {
+  background-position: center;
+  background-size: cover;
+
+  /* display: flex !important;
+  justify-content: center; */
+  align-items: stretch !important;
+
+  aspect-ratio: 417 / 236;
+  height: auto;
+  width: 417px !important;
+  border-radius: 8px;
+  overflow: hidden;
+
+  @media (max-width: 1200px) {
+	  width: 286px !important;
+  }
+
+  @media (max-width: 768px) {
+		width: 238px !important;
+	}
+}
+
+/* Buttons */
+.button-inset {
+	width: 152px;
+    appearance: none;
+    padding: 0.5rem 1rem;
+    border: none;
+	border-radius: 2rem;
+	text-align: center;
+	cursor: pointer;
+	outline: 1px solid rgba(0, 0, 0, 0.2);
+	outline: 1px solid rgba(168, 168, 168, 0.25);
+    background: #f0f0f0;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+	transition: outline 0.5s;
+}
+
+.dark .button-inset {
+	background: #555555;
+	color: #eee;
+	box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.2);
+}
+
+.button-inset--small {width: 70px;}
+.button-inset--middle {width: 100px;}
+.button-inset--full {width: unset;}
+
+.button-inset:active, .button-inset--active {
+    box-shadow: inset 0px 0px 5px rgba(167, 167, 167, 0.3);
+}
+
+.button-inset:hover {
+	outline: 2px solid rgba(168, 168, 168, 0.25);
+	outline: 2px solid rgba(0, 0, 0, 0.5);
+	/* box-shadow: inset 0px 0px 5px rgba(167, 167, 167, 0.3); */
+}
+.dark .button-inset:hover {outline: 1px solid rgba(255, 255, 255, 0.25);}
+
+.button-inset:disabled {
+	background: #e0e0e0;
+	color: #a0a0a0;
+	cursor: not-allowed;
+	box-shadow: none;
+	outline: none;
+}
+
+.glass-effect {
+	position: absolute;
+	z-index: 8;
+    background: rgba(31, 31, 31, 0.2);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
